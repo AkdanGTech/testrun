@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+#projects {
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    background-color: whitesmoke;
+}
+
+body {
+    background-color: black;
+    color:whitesmoke;
+    margin-top: 10px;
+    scroll-behavior: smooth;
+    margin-left: 70px;
+    padding: 10px;
+}
+.nav {
+
+}
