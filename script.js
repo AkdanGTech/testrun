@@ -1,31 +1,37 @@
-// Nav hamburgerburger selections
-const burger = document.querySelector("#burger-menu");
-const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
-
-// Scroll to top selection
-const scrollUp = document.querySelector("#scroll-up");
-
-// Select nav links
-const navLink = document.querySelectorAll(".nav-link");
-
-// Hamburger menu function
-burger.addEventListener("click", () => {
-  ul.classList.toggle("show");
-});
-
-// Close hamburger menu when a link is clicked
-navLink.forEach((link) =>
-  link.addEventListener("click", () => {
-    ul.classList.remove("show");
-  })
-);
-
-// scroll to top functionality
-scrollUp.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-});
+const submitForm = document.querySelector(".myForm");
+myForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+const name = document.querySelector("#name");
+const email = document.querySelector("#email");
+function submitForm() {
+  document.querySelector(".myForm").Submit;
+if (name.value == "" || email.value == "") {
+    alert("Ensure you input a value in both fields!");
+  } 
+else {
+// perform operation with form input
+    alert("This form has been successfully submitted!");
+    console.log(`This form has a name of ${name.value} and email of ${email.value}`
+    );
+    name.value = "";
+    email.value = "";
+  }
+}
+})
+//email validation
+function validation(){
+  const name = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
+  const emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+  if( name ==='' || email ===''){
+  alert("Please fill all fields...!!!!!!");
+  console.log(false);
+  }
+  else if(!(email).match(emailReg)){
+  alert("Invalid Email...!!!!!!");
+  console.log(false);
+  }
+  else{
+  alert("This form has been successfully submitted!");
+  }
+}
