@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .imagnav {
     width: 45px;
     height: 45px;
@@ -11,10 +14,12 @@ ul {
 nav ul {
     display: flex;
     gap: 1.9rem;
+    background-color: white;
+    position: sticky;
 }
 nav {
     position: sticky;
-    top: 0px;
+    top: 0;
     left: 0;
     display:flex;
     box-shadow:10px 10px 10px rgba(0,0,0,0.4);
@@ -22,96 +27,62 @@ nav {
     text-decoration:none;
     justify-content:space-between;
     background-color:white;
-    padding-left: 100px;
-    padding: 20px 20px;
+    padding-left: 20px;
+    padding: 10px 10px;
     font-size: 17px;
     overflow:hidden;
-}
-.display-head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-    height: 300px;
-    margin: auto;
-  }
-.nav a {
-   color:black;
-   padding: 14px 16px;
+    background-color: white;
 }
 .nav a.active {
     background-color:#04AA6D;
     color:white;
+    padding: 20px;
 }
 .nav a:hover {
-    background-color: #5555;
-    color:black;
+    background-color:#04AA6D;
+    color:blue;
 }
-.main {
-    max-width: 1000px;
-    margin: auto;
-  }
-.intro h1 {
-    text-align: center;
-    font-size:45px;
+.nav-link {
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
 }
-.intro p  {
+.section-intro {
     text-align: center;
+    background-color:#04AA6D;
+    padding:50px;
+    margin-top: 4px;
+    font-stretch: wider;
+    color:white;
+}
+.section-intro h1 {
+    font-size: 40px;
+}
+.first-intro {
     font-size: 25px;
 }
-.About {
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-}
-.About h1 {
-    margin-bottom: var(--bottom-margin);
-}
-.About p {
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
-    text-align: justify;
-}
-.display {
-    height: 20rem;
-    width: 30rem;
-}
-  
-.get-to {
-    font-size: 18px;
-    color: rgba(0,0,0,0.9);
-}
-.header-name {
-    color:black;
-    
-}
-#projects {
-    display: flex;
-    width: 20rem;
-    height: 20rem;
-}
-body {
-    margin-top: 2px;
-    scroll-behavior: smooth;
-    margin: auto;
-    margin-left: 70px;
-    padding: 20px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-size:contain;
-    color:black;
-}
-.footar {
-    background-image: url(/assets/images/movingstars.gif);
-    background-repeat:repeat;
+.about-page h2 {
     text-align: center;
+    font-size:35px;
 }
-.grade {
-    width:100%;
+.about-page p {
+    font-size: 20px;
+    text-align:center;
+
 }
-.background {
-    background-color: rgba(255, 255, 255, 0);
+.about-more h2 {
+    font-size: 35px;
+}
+.about-more p {
+    font-size: 20px;
+}
+.btn-submit {
+    background-color:#04AA6D;
+    color: white;
+    font-size: 25px;
+}
+.myskill-wrap h2 {
+    font-size: 35px;
 }
 .My-skills {
     max-width: 68.75rem;
@@ -119,7 +90,6 @@ body {
     text-align: center;
     margin-top: 2.5rem;
 }
-  
 .skill-header {
     margin-bottom: 1rem;
 }
@@ -130,53 +100,101 @@ body {
 .skil {
     width: 11.875rem;
     height: 11.25rem;
-} 
-.icon-card {
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow:darkturquoise;
-    padding: 20px;
-    margin: 10px;
 }
-.btn-submit {
-    background-color: blue;
-    color:white;
-    height:40px;
+.my-portfolio {
+    font-size: 35px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+  
+* {
+    box-sizing: border-box;
+}
+  
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 700px) {
+.responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.form-caption {
+    text-align: center;
+}
+#name {
+    height: auto;
+    width: 50%;
+    padding: 10px;
+    border-color:black;
+}
+#email {
+    height: auto;
+    width: 50%;
+    padding: 10px;
+    border-color:black;
+}
+#message-input {
+    padding:200px;
+    height: auto;
+    width:50%;
+    border-color:black;
+}
+.myForm {
+    background-image: url("/assets/images/movingstars.gif");
+    color: white;
+.sub-icon {
+    background-color: #04AA6D;
+    padding: 15px;
+}
 }
 .form-container {
-    max-width: 100%;
-    margin: 0 auto;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
-}
-.form-head {
-    margin: auto;
     text-align: center;
-    margin-top: 2.5rem;  
 }
-.your-name {
-    width: 100px;
-    height: 20px;
+.btn-sub {
+    color:white;
+    background-color: #04AA6D;
+    border-color:black
 }
-.contact-form-container label {
-    line-height: 2.7em;
-    font-weight: var(--bold-font);
-    color: var(--primary-color);
-  }
-  
-  .contact-form-container textarea {
-    min-height: 6.25rem;
-    font-size: 14px;
-  }  
-.form-container .input-field {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-    border: 2px outset var(--primary-color);
-    font-size: 0.875rem;
-    outline: none;
-  }
-.column-row {
-        flex-direction: column;
+.social {
+    max-width: 20%;
+    float: right;
+}
+.footer-line {
+    text-align: left;
+    background-image: url("/assets/images/movingstars.gif");
+    height: auto;
+    width:100%;
+    padding: 70px;
+    color:white;
+    text-align: center;
 }
