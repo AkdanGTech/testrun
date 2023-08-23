@@ -1,80 +1,156 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" href="./css/styles.css" rel="stylesheet"/>
-    <link type="text/js" href="./script/script.js"/>
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title>Daniel Akinyoyenu Portfolio</title>
+    <script type="scripttype" href="/assets/script/script.js"></script>
 </head>
 <body>
-    <!--Main Heading-->
-<main>
-    <!--Navigation Bar-->
-    <nav class="nav">
-        <h1>D.A</h1>
-        <ul class="nav-menu">
-            <li><a href="home" class="nav-link">Home</a></li>
+<!--Navigation Bar-->
+<div class="main-nav">
+    <nav class="nav" id="nav">
+        <div class="im-nav">
+            <img src="./images/imgnav.jpg" alt="imgnav" class="imagnav"/>
+            <span class="header-name"><b>Daniel Akinyoyenu</b></span>
+        </div>
+        <div class="nav-menu">
+            <ul>
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#project" class="nav-link">Projects</a></li>
+            <li><a href="#project" class="nav-link">Portfolio</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+            </ul>
+        </div>
     </nav>
-    <!--About me section-->
-    <section class="About">
-    <h2>About Me</h2>
-        <p><q>Hi! I am <em><b>Daniel Akinyoyenu &#128151;</em></b></q></p>
-        <p>Software<br>Engineer;</p>
-        <p>I'm a Software Engineer currently based in Nigeria with 1+ years of professional experience in ideating, designing, building and delivering end to end solutions for digital products.</p>
-    </section>
-        <img src="./images/webdes.jpg" alt=""/>
-    <!--My Skills images-->
+</div>
+<div>
+        <!--Bio section-->
+    <div class="bio-page">
+        <div class="section-intro">
+        <section class="intro">
+        <div class="bio">
+            <h1>HEY, I'M DANIEL AKINYOYENU</h1>
+            <p class="first-intro">I'm a Software Engineer building the Front-end and Back-end of Websites and Web Applications that leads to the success of the overall product</p>
+            </section>
+        </div>
+    </div>
+        <!--About me section-->
+    <div class="about-page">
+        <section class="About">
+        <div class="bio-sec">
+            <h2>About Me</h2>
+            <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+            <p>I'm a <strong>Software Engineer</strong> currently based in Nigeria with 1+ years of professional experience in ideating, designing, building and delivering end to end solutions for digital products.</p>
+        </section>
+        </div>
+    </div>
+</div>
+<div class="about-more">
+    <div class="get-to">
+    <h2>Get to know me!</h2>
+        <p>I'm a <strong>Software Engineer</strong> building the <strong>Front-end and Back-end</strong> of Websites and Web Applications that leads to the success of the overall product.
+            Check out some of my work in the Projects section.
+            I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <b><a href="linkedin.com/in/daniel-akinyoyenu">Linkedin</a></b> where I post useful content related to Web Development and Programming
+            I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+        <a href="mailto:danielakinyoyenu@gmail.com"><button type="button" value="Contact Me" class="btn-submit">Contact Me!</button></a>
+    </div>
+</div>
+<!--My Skills images-->
+<div>
     <section class="My-skills">
-        <h2>My Skills</h2>
-        <div class="skills">
-        <img src="./images/html5.svg" alt="html5"/>
-        <img src="./images/css3.svg" alt="css3"/>
-        <img src="./images/js.svg" alt="js"/>
-        <img src="./images/git.svg" alt="git"/>
-        <img src="./images/react.svg" alt="react"/>
-        <img src="./images/bootstrap.svg" alt="bstrap"/>
+        <div class="myskill-wrap">
+            <h2 class="skill-header">My Skills</h2>
+            <div class="skill-wrapper">
+                <div class="skills">
+                <img src="./images/html5.svg" alt="html5" class="skil ion-card">
+                <img src="./images/css3.svg" alt="css3" class="skil ion-card"/>
+                <img src="./images/js.svg" alt="js" class="skil ion-card"/>
+                <img src="./images/git.svg" alt="git"class="skil ion-card" />
+                <img src="./images/react.svg" alt="react" class="skil ion-card"/>
+                <img src="./images/bootstrap.svg" alt="bstrap" class="skil ion-card"/>
+                <img src="./images/python.jpeg" alt="python" class="skil ion-card" />
+                <img src="./images/node.jpeg" alt="nodejs" class="skil ion-card"/>
+            </div>
         </div>
-    </section>
-    <!--My Projects-->
-    <section class="My-project">
-        <h2>My Portfolio</h2>
-    <div class="porfolio">
-        <div class="grade">
-            <img src="./images/webs.jpg" alt="grade calculator" loading="lazy"/>
-            <h3>Student Grade Calculator</h3>
-            <a href="" rel="student">Explore</a>
-            <details>This is a Student Grade Generator that prompts the user to input student marks. The input is between 0 and 100 which stands as the minimum and maximum score every students can score.</details>
-        <div class="speed">
-            <img src="./images/webdesign.jpg" alt="speed detector" loading="lazy"/>Explore</a>
-        <details>This is a Speed Detector program that takes the input of the speed of a car e.g 80 km/s. If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points. For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.</details>
+    </section>  
+</div>
+ <!--My Projects-->
+ <section class="My-project">
+    <h2 class="my-portfolio">My Portfolio</h2>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="./images/adams lab.png">
+        <img src="./images/adams lab.png" alt="Cinque Terre"></a>
+        <div class="desc"><b>Adams Lab:</b>This is an Image Gallery for selcting different images.</caption></div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="./images/portfolio sneak.jpg">
+        <img src="./images/portfolio sneak.jpg" alt="Forest"></a>
+        <div class="desc"><b>Portfolio Sneak:</b>This is a portfolio sneak for displaying your projets</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="./images/pearl lands.png">
+        <img src="./images/pearl lands.png" alt="Northern Lights"></a>
+        <div class="desc"><b>Pearls Page:</b>This is a pearls page for displaying arts and design</div>
+    </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="./images/studio gallery.png">
+        <img src="./images/studio gallery.png" alt="Mountains"></a>
+        <div class="desc"><b>Studio Library:</b>This is a studio libray for displaying ontents and events</div>
+    </div>
+</div>
+    <div class="clearfix"></div>
+<div class="form-caption">
+        <h2>Get in touch with me</h2>
+        <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+</div>
+<div class="form-container">
+    <form action="#" method="post" class="myForm">
+    <div class="form-wrap">
+        <div class="label-head">
+            <label for="name"><b>Name</b></label><br>
+            <input type="text" id="name" placeholder="Enter your name" class="form-tag" required>  
         </div>
-        <a href="" rel="salary"><img src="./images/webdes.jpg" alt="salary calculator"/>Net Salary Calculator</a>
-        <details>This is a Net Salary calculator program, whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits.</details>
+        <div>
+            <label for="email"><b>Email</b></label><br>
+            <input type="email" id="email" placeholder="Enter your email" class="form-tag" required>
+        </div>
+        <div>
+            <label for="message"><b>Message</b></label><br>
+            <textarea id="message-input" placeholder="Enter your message" class="form-tag" required></textarea>
         </div>
     </div>
-    </section>
-    <footer>&copy;
-
-    <div id="futter">
-        <img src="./images/github.gif" alt="github"/>
-        <img src="./images/instagram.gif" alt="instagram"/>
-        <img src="./images/linkedin.gif" alt="linkedin"/>
-        <img src="./images/twitter.gif" alt="twitter"/>
-    </div>
-    </footer>
+        <input type="button" onclick="submitForm()" value="Submit" id="submit-icon" class="sub-icon">
+    </form>
     
-</main>
+</div><br>
+<div class="social-menu">
+    <div class="social">
+        <a href="github.com/AkdanGTech" target="_blank"><img src="./images/github.gif" alt="github" class="social"/></a>
+        <a href="instagram.com/akdangtech?s=21" target="_blank"><img src="./images/instagram.gif" alt="instagram" class="social"/></a>
+        <a href="linkedin.com/in/daniel-akinyoyenu" target="_blank"><img src="./images/linkedin.gif" alt="linkedin" class="social"/></a>
+        <a href="twitter.com/akdangtech?s=21" target="_blank"><img src="./images/twitter.gif" alt="twitter" class="social"/></a>
+    </div>
+        <br>
+    <div class="footer-line">
+        <footer>
+        <p>&copy; copyright 2023 Built by <b><u>Daniel Akinyoyenu</b></u>(AkdanGTech)</p>
+        </footer>
+    </div>
+</div>
 </body>
-
 </html>
+    
